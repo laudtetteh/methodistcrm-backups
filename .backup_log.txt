@@ -1,0 +1,45 @@
+........."staging" Backup Started at 2020-04-22-08:35.........
+"staging" directory already exists!
+...compression of assets complete!
+...no current 'staging' backup.
+...move complete!
+...cleanup complete!
+BACKUP COMPLETE: 'staging'!
+........................|Backup Ended|........................
+
+........."staging" Backup Started at 2020-04-26-22:03.........
+"staging" directory already exists!
+...compression of assets complete!
+...no current 'staging' backup.
+...move complete!
+...cleanup complete!
+BACKUP COMPLETE: 'staging'!
+........................|Backup Ended|........................
+
+........."staging" Backup Started at 2020-04-26-22:16.........
+"staging" directory already exists!
+...compression of assets complete!
+...no current 'staging' backup.
+...move complete!
+...cleanup complete!
+BACKUP COMPLETE: 'staging'!
+........................|Backup Ended|........................
+
+........."staging" Backup Started at 2020-10-20-07:36.........
+"staging" directory already exists!
+...compression of assets complete!
+...no current 'staging' backup.
+...move complete!
+...cleanup complete!
+BACKUP COMPLETE: 'staging'!
+........................|Backup Ended|........................
+
+........."staging" Backup Started at 2020-10-21-20:33.........
+"staging" directory already exists!
+...compression of assets complete!
+...no current 'staging' backup.
+...move complete!
+...cleanup complete!
+BACKUP COMPLETE: 'staging'!
+........................|Backup Ended|........................
+

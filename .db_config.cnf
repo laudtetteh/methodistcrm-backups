@@ -1,0 +1,11 @@
+# Place this hidden config file in root dir for storing mysql info
+# To be used for backup shell script
+# https://stackoverflow.com/a/22933056#
+
+[mysql]
+user=xxxxxxxxxx
+password=xxxxxxxxxx
+
+[mysqldump]
+user=xxxxxxxxxx
+password=xxxxxxxxxx
