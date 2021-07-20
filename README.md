@@ -9,7 +9,7 @@ A user-submitted form triggers the controller action that executes the _.backup_
 
 
 ### 2. Automated (Cron job)
-I wrote 2 cron jobs at server level that run the _.backup_cron.sh_ script once every 2 hours for the Production app and every 4 hours for the Staging app, like so: 
+I wrote 2 cron jobs at server level that run the _.backup_cron.sh_ script once every 2 hours for the Production app and every 4 hours for the Staging app, and alert me via email, like so: 
 
 `0 2 * * * $HOME/.backup_cron.sh staging >> ~/logs/user/cron-mcrm_staging.log 2>&1 | mail -s "Staging Backup Started - MethodistCRM" -S from=dev@methodistcrm.com laud@studiotenfour.com`
 
