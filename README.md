@@ -1,7 +1,9 @@
 # MethodistCRM Backup Tool
-Snippets from a backup tool that I wrote for the MethodistCRM Laravel app. It includes 2 shell scripts, some PHP, a Database config file, and a log file. Backups are created in 2 ways: 
+Snippets from a backup tool that I wrote for the MethodistCRM Laravel app. It includes 2 shell scripts, some PHP, a Database config file, and a log file.
 
 ## Two different methods
+Backups are created in 2 ways: 
+
 ### 1. User-initiated 
 A user-submitted form triggers the controller action that executes the _.backup_user.sh_ shell script.
 
