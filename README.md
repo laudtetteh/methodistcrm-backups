@@ -1,6 +1,7 @@
 # MethodistCRM Backup Tool
 Snippets from a backup tool that I wrote for the MethodistCRM Laravel app. It includes 2 shell scripts, some PHP, a Database config file, and a log file. Backups are created in 2 ways: 
 
+## Two different methods
 ### 1. User-initiated 
 A user-submitted form triggers the controller action that executes the _.backup_user.sh_ shell script.
 
@@ -11,6 +12,8 @@ I wrote 2 cron jobs at server level that run the _.backup_cron.sh_ script once e
 `0 2 * * * $HOME/.backup_cron.sh staging >> ~/logs/user/cron-mcrm_staging.log 2>&1 | mail -s "Staging Backup Started - MethodistCRM" -S from=dev@methodistcrm.com laud@studiotenfour.com`
 
 `0 */4 * * * $HOME/.backup_cron.sh production >> ~/logs/user/cron-mcrm_production.log 2>&1 | mail -s "Production Backup Started - MethodistCRM" -S from=dev@methodistcrm.com laud@studiotenfour.com`
+
+
 
 ## How it works
 For both the user-initiated script and the cron-initiated script, here are the steps involved:
