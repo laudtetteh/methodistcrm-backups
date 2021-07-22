@@ -20,11 +20,11 @@ I wrote 2 cron jobs at server level that run the _.backup_cron.sh_ script once e
 ## How it works
 For both the user-initiated script and the cron-initiated script, here are the steps involved:
 
-1. The script looks to see if a backup directory exists for the current environment (Production/Staging/Local), and creates one if none is found.
-2. Next, it logs into MySQL and creates a database dump inside the root directory, and names it `some_time_stamp.sql`
-3. It also compresses all files from Laravel's /uploads directory, along with the db dump from step 2 above, then places the zip file in the root directory and names it `env_name_some_timestamp.zip`. Backups names are simply a timestamp prefixed by the app environment - Production/Staging/Local
-4. Next, it checks for an existing backup by the same name as the one we just created
-5. If one exists, it temporarily renames it, moves the newly-created backup in its place. If successful, it deletes the old, renamed backup.
-6. If none is found, it simply moves the new backup into the appropriate directory from step 1.
-7. Finally, it removes the db dump created in step 2 from the root directory, then inserts a row for the successful backup into the `backups` table
-
+1. First things first, the script notifies me via email that a backup is in progress
+2. The script looks to see if a backup directory exists for the current environment (Production/Staging/Local), and creates one if none is found.
+3. Next, it logs into MySQL and creates a database dump inside the root directory, and names it `some_time_stamp.sql`
+4. It also compresses all files from Laravel's /uploads directory, along with the db dump from step 2 above, then places the zip file in the root directory and names it `env_name_some_timestamp.zip`. Backups names are simply a timestamp prefixed by the app environment - Production/Staging/Local
+5. Next, it checks for an existing backup by the same name as the one we just created
+6. If one exists, it temporarily renames it, moves the newly-created backup in its place. If successful, it deletes the old, renamed backup.
+7. If none is found, it simply moves the new backup into the appropriate directory from step 1.
+8. Finally, it removes the db dump created in step 2 from the root directory, then inserts a row for the successful backup into the `backups` table
